@@ -34,22 +34,22 @@ h1 {
 /***
 Fix link outlines after click
 ***/
-a {
-	color: #E02222;
-}
+/* a {
+	color: #F8F9FA;
+} */
 
-a,
+/* a,
 a:focus,
 a:hover,
 a:active {
 	outline: 0;
 	text-decoration: none;
-}
+} */
 
-a:hover {
+/* a:hover {
 	color: #E02222;
 	text-decoration: underline;
-}
+} */
 
 /***
 Misc tools
@@ -131,6 +131,10 @@ Misc tools
 
 .margin-bottom-5 {
 	margin-bottom: 5px !important;
+}
+
+.margin-bottom-8 {
+	margin-bottom: 8px !important;
 }
 
 .margin-bottom-10 {
@@ -1674,7 +1678,7 @@ Pre-Footer and pre-footer elements
 }
 
 .pre-footer a {
-	color: #57c8eb;
+	color: #bdbdbd;
 }
 
 .pre-footer h2,
@@ -1981,7 +1985,6 @@ Pre-Footer and pre-footer elements
 
 /* footer */
 .footer {
-	background: #272626;
 	color: #fff;
 	font-size: 12px;
 	padding: 15px 10%;

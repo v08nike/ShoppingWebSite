@@ -5,10 +5,32 @@
   margin-right: -96px; */
 }
 
+.bag-image {
+  margin-top: 5%;
+  width: 13px;
+  height: 13px
+}
+
+.menulist {
+  margin: 1rem;
+  color: #F8F9FA;
+  text-decoration: none;
+}
+
+.menulist:hover {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+a.menulist:focus {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
 .product-woman-str {
   color: #fff;
   font-family: Chakra Petch;
-  font-size: 3.5vw;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -19,7 +41,7 @@
 .product-jacket-str {
   color: #fff;
   font-family: Avenir;
-  font-size: 1vw;
+  font-size: 18px;
   font-style: normal;
   font-weight: 100;
   letter-spacing: 3px;
@@ -32,6 +54,7 @@
   height: 20%;
   flex-shrink: 0;
   border: none;
+  border-radius: 2px !important;
   color: #1C2023;
   font-family: Avenir;
   font-size: 14px;
@@ -149,12 +172,18 @@
   text-decoration: line-through;
 }
 
-.new-arrival {
-  padding: 1px 24px 44px 24px;
-}
 
 .product-desc {
   width: 50vw;
+  color: #000;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 136.528%;
+  letter-spacing: 2px;
+  opacity: 0.6;
 }
 
 .mobile-header {
@@ -176,7 +205,7 @@
 
 .footer {
   background-color: #080709;
-  padding-left: 10%;
+  padding-left: 80px;
 }
 
 .best-circle {
@@ -209,6 +238,18 @@
   margin: 2% 3%;
 }
 
+.product-buttons {
+  position: absolute;
+  display: flex;
+  word-wrap: break-word;
+  justify-items: center;
+  align-items: center;
+  right: 0;
+  left: auto;
+  bottom: 0;
+  top: auto;
+}
+
 .carousel-inner {
   height: 683px;
 }
@@ -239,26 +280,19 @@
   .nav-topbar {
     padding: 24px 40px
   }
+
+  .web-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   #product {
     padding: 29px 16px 38px 16px;
-  }
-
-  .product-woman-str {
-    font-size: 5vw;
-  }
-
-  .product-jacket-str {
-    font-size: 2vw;
-    margin-bottom: 5%;
-  }
-
-  .explore-button {
-    width: 25vw;
-    height: 5.5vw;
-    font-size: 1.5vw;
   }
 
   .carousel-str1 {
@@ -307,13 +341,7 @@
     text-align: center;
   }
 
-  .web-header {
-    display: none;
-  }
 
-  .mobile-header {
-    display: block;
-  }
 
   .email-input {
     width: 306px;
@@ -365,6 +393,23 @@
 }
 
 @media only screen and (max-width: 490px) {
+
+  .product-woman-str {
+    font-size: 20px;
+  }
+
+  .product-jacket-str {
+    font-size: 12px;
+    margin-bottom: 5%;
+  }
+
+  .explore-button {
+    width: 112.294px;
+    height: 27.124px;
+    font-size: 10px;
+    border-radius: 2px !important;
+  }
+
   .carousel-inner {
     height: 337px;
   }
