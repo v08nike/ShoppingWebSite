@@ -5,6 +5,10 @@
   margin-right: -96px; */
 }
 
+.pi-img-wrapper {
+  cursor: pointer;
+}
+
 .bag-image {
   margin-top: 5%;
   width: 13px;
