@@ -8,13 +8,12 @@
 .bag-image {
   margin-top: 5%;
   width: 13px;
-  height: 13px
+  height: 13px;
+  cursor: pointer;
 }
 
 .menulist {
   margin: 1rem;
-  color: #F8F9FA;
-  text-decoration: none;
 }
 
 .menulist:hover {
@@ -23,6 +22,21 @@
 }
 
 a.menulist:focus {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.mobile-menulist {
+  color: #F8F9FA;
+  text-decoration: none;
+}
+
+.mobile-menulist:hover {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+a.mobile-menulist:focus {
   text-decoration: none;
   color: #f8f9fa;
 }
@@ -134,6 +148,8 @@ a.menulist:focus {
 }
 
 .new-arrival-name {
+  display: flex;
+  align-items: center;
   color: #0a0a0a;
   font-family: Avenir;
   font-size: 10px;
