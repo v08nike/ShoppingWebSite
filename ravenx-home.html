@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/chakra-petch"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/avenir"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="assets/plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="assets/pages/css/components.css" rel="stylesheet" />
+    <link href="assets/pages/css/slider.css" rel="stylesheet" />
+    <link href="assets/pages/css/home.css" rel="stylesheet" />
+    <link
+      href="assets/pages/css/style-shop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/corporate/css/style.css" rel="stylesheet" />
+    <link href="assets/corporate/css/style-responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="header web-header"
+      style="background-color: #1a1a1a; box-shadow: none"
+    >
+      <div class="nav-topbar">
+        <div class="col-md-5 additional-shop-info">
+          <div style="align-items: center; display: flex">
+            <img
+              style="
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                margin-right: 1rem;
+              "
+              src="./assets/icons/facebook-icon.svg"
+            />
+            <img
+              style="
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                margin-right: 3rem;
+              "
+              src="./assets/icons/icon.svg"
+            />
+            <img src="./assets/icons/Calling.svg" />
+            <span style="font-size: 14px; color: #f8f9fa; margin-left: 1rem"
+              >010-232-776-899</span
+            >
+          </div>
+          <div
+            style="
+              display: flex;
+              color: #f8f9fa;
+              font-family: Avenir;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: normal;
+              letter-spacing: 0.65px;
+              text-transform: uppercase;
+              margin-top: 21px;
+            "
+          >
+            <div class="text-nowrap" style="margin: 1rem; margin-left: 0"
+              >PRODUCTS <i class="fa fa-angle-down" style="color: #f8f9fa"></i>
+            </div>
+            <div style="margin: 1rem">Brands</div>
+            <div style="margin: 1rem" class="text-nowrap">About Us</div>
+            <div style="margin: 1rem" class="text-nowrap">Contact Us</div>
+            <div style="margin: 1rem; color: red">Sale</div>
+          </div>
+        </div>
+        <div class="col-md-2 additional-nav text-center">
+          <img src="./assets/logo.png" />
+        </div>
+        <div class="col-md-5" id="lang_search">
+          <div style="display: flex; justify-content: flex-end">
+            <div class="dropdown">
+              <div
+                href="javascript:void(0);"
+                class="current dropdown-toggle"
+                data-toggle="dropdown"
+                data-target="#"
+                style="
+                  color: #f8f9fa;
+                  font-family: Avenir;
+                  font-size: 13px;
+                  font-style: normal;
+                  font-weight: 300;
+                  line-height: normal;
+                  margin-right: 1rem;
+                "
+                >ENG
+                <i class="fa fa-angle-down" style="color: #f8f9fa"></i>
+              </div>
+              <ul
+                class="dropdown-menu"
+                style="
+                  right: 0;
+                  left: auto;
+                  min-width: 98px;
+                  height: 65px;
+                  padding: 10px 20px 11px 20px;
+                "
+              >
+                <li class="text-right margin-bottom-8">ENG</li>
+                <li class="text-right">ARABIC</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              margin-top: 11px;
+            "
+          >
+            <div
+              class="input-group"
+              style="
+                margin: 1rem;
+                margin-right: 4rem;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #f8f9fa;
+                width: 136px;
+              "
+            >
+              <input
+                type="text"
+                placeholder="Search"
+                class="form-control"
+                style="border: none; background-color: transparent; padding: 0"
+              />
+              <i
+                class="fa fa-search search-btn"
+                style="color: white; font-size: 16px"
+              ></i>
+            </div>
+            <div>
+              <img
+                src="./assets/icons/Profile.svg"
+                style="margin-right: 10px"
+              />
+              <img src="./assets/icons/Bag.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mobile-header"
+      style="color: white; height: 76px; background-color: #1a1a1a"
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding: 8px 16px 8px 16px;
+          align-items: center;
+        "
+      >
+        <div style="font-size: 20px">
+          <i
+            class="fa fa-close mobi-toggler"
+            id="close-icon"
+            style="margin-right: 1rem"
+            onclick="handelClick()"
+          ></i>
+          <i
+            id="toggle-icon"
+            class="fa fa-bars mobi-toggler"
+            style="margin-right: 1rem"
+            onclick="handelClick()"
+          ></i>
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="additional-nav text-center">
+          <img
+            src="./assets/logo.png"
+            style="width: 27px; height: 34px; flex-shrink: 0"
+          />
+        </div>
+        <div style="font-size: 24px">
+          <img
+            src="./assets/icons/Profile.svg"
+            style="margin-right: 1rem; width: 20px; height: 20px"
+          />
+          <img src="./assets/icons/Bag.svg" style="width: 20px; height: 20px" />
+        </div>
+      </div>
+
+      <div
+        class="header"
+        style="
+          position: relative;
+          background-color: #1a1a1a;
+          border-top: 3px solid black;
+          box-shadow: none;
+        "
+      >
+        <div
+          class="header-navigation"
+          style="background-color: #1a1a1a; margin: 0"
+        >
+          <div
+            style="
+              display: flex;
+              padding: 8px 16px 8px 0px;
+              background-color: #1a1a1a;
+              justify-content: space-between;
+              align-items: center;
+              padding-top: 20px;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <img
+                style="
+                  width: 24px;
+                  height: 24px;
+                  flex-shrink: 0;
+                  margin-right: 1rem;
+                "
+                src="./assets/icons/facebook-icon.svg"
+              />
+              <img
+                style="
+                  width: 24px;
+                  height: 24px;
+                  flex-shrink: 0;
+                  margin-right: 3rem;
+                "
+                src="./assets/icons/icon.svg"
+              />
+              <img src="./assets/icons/Calling.svg" />
+              <span style="font-size: 14px; color: #f8f9fa; margin-left: 1rem"
+                >010-232-776-899</span
+              >
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+              "
+            >
+              <div>
+                <div
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  data-target="#"
+                  style="display: flex"
+                >
+                  <div
+                    class="current text-right"
+                    style="
+                      color: #f8f9fa;
+                      font-family: Avenir;
+                      font-size: 13px;
+                      font-style: normal;
+                      font-weight: 300;
+                      line-height: normal;
+                      margin-right: 1rem;
+                    "
+                    >ENG
+                  </div>
+                  <i class="fa fa-angle-down" style="color: #f8f9fa"></i>
+                </div>
+                <ul
+                  class="dropdown-menu"
+                  style="
+                    top: 45px;
+                    right: 25px;
+                    min-width: 98px;
+                    height: 65px;
+                    padding: 10px 20px 11px 20px;
+                    position: absolute;
+                    background-color: white;
+                    color: #080709;
+                    width: 98px;
+                    cursor: pointer;
+                  "
+                >
+                  <li class="text-right margin-bottom-8">ENG</li>
+                  <li class="text-right" style="margin-left: 0">ARABIC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              color: #f8f9fa;
+              font-family: Avenir;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: normal;
+              letter-spacing: 0.65px;
+              text-transform: uppercase;
+              margin-top: 21px;
+            "
+          >
+            <div
+              style="
+                border-top: 1px solid rgb(243, 243, 243, 0.1);
+                padding: 20px 0px;
+              "
+              >PRODUCTS <i class="fa fa-angle-down" style="color: #f8f9fa"></i
+            ></div>
+            <div
+              style="
+                border-top: 1px solid rgb(243, 243, 243, 0.1);
+                padding: 20px 0px;
+              "
+              >Brands</div
+            >
+            <div
+              style="
+                border-top: 1px solid rgb(243, 243, 243, 0.1);
+                padding: 20px 0px;
+              "
+              >About Us</div
+            >
+            <div
+              style="
+                border-top: 1px solid rgb(243, 243, 243, 0.1);
+                padding: 20px 0px;
+              "
+              >Contact Us</div
+            >
+            <div
+              style="
+                color: red;
+                border-top: 1px solid rgb(243, 243, 243, 0.1);
+                padding: 20px 0px;
+              "
+              >Sale</div
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-slider">
+      <div
+        id="carousel-example-generic"
+        class="carousel slide carousel-slider"
+        style="background-color: #080709"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-example-generic"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="item carousel-item-four active">
+            <div class="carousel-position-four">
+              <div class="carousel-str1">Mission-Ready Excellence:</div>
+              <div class="animate-delay text-uppercase carousel-str2">
+                Your Source for Elite <br /><span> Military Gear.</span>
+              </div>
+              <button class="carousel-button"
+                ><div class="carousel-button-str text-center"
+                  >START SHOPING</div
+                >
+              </button>
+            </div>
+          </div>
+          <div class="item carousel-item-five">
+            <div class="carousel-position-four">
+              <div class="carousel-str1">Mission-Ready Excellence:</div>
+              <div class="animate-delay text-uppercase carousel-str2">
+                Your Source for Elite <br /><span> Military Gear.</span>
+              </div>
+              <button class="carousel-button"
+                ><div class="carousel-button-str text-center"
+                  >START SHOPING</div
+                >
+              </button>
+            </div>
+          </div>
+          <div class="item carousel-item-six">
+            <div class="carousel-position-four">
+              <div class="carousel-str1">Mission-Ready Excellence:</div>
+              <div class="animate-delay text-uppercase carousel-str2">
+                Your Source for Elite <br /><span> Military Gear.</span>
+              </div>
+              <button class="carousel-button"
+                ><div class="carousel-button-str text-center"
+                  >START SHOPING</div
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="left carousel-control carousel-control-shop prev-icon-button"
+          href="#carousel-example-generic"
+          role="button"
+          data-slide="prev"
+        >
+          <i class="fa fa-angle-left prev-icon" aria-hidden="true"></i>
+        </a>
+        <a
+          class="right carousel-control carousel-control-shop next-icon-button"
+          href="#carousel-example-generic"
+          role="button"
+          data-slide="next"
+        >
+          <i class="fa fa-angle-right next-icon" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="main margin-bottom-40">
+      <div class="container">
+        <div class="row" id="product">
+          <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0">
+            <div class="product-item">
+              <div class="pi-img-wrapper" style="position: relative">
+                <div
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(36 47 58 / 49%);
+                    z-index: 10;
+                    display: block;
+                  "
+                >
+                </div>
+                <img
+                  src="./assets/pages/img/home/woman1.png"
+                  class="img-responsive"
+                  style="position: relative"
+                />
+                <div
+                  style="
+                    display: block;
+                    color: white;
+                    align-items: center;
+                    padding-top: 50%;
+                    background: transparent;
+                    z-index: 11;
+                  "
+                >
+                  <p class="product-woman-str text-center">Woman </p>
+                  <p class="product-jacket-str text-center">protected jacket</p>
+                  <button class="explore-button text-center">EXPLORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0">
+            <div class="product-item">
+              <div class="pi-img-wrapper" style="position: relative">
+                <div
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(36 47 58 / 49%);
+                    z-index: 10;
+                    display: block;
+                  "
+                >
+                </div>
+                <img
+                  src="./assets/pages/img/home/woman1.png"
+                  class="img-responsive"
+                  style="position: relative"
+                />
+                <div
+                  style="
+                    display: block;
+                    color: white;
+                    align-items: center;
+                    padding-top: 50%;
+                    background: transparent;
+                    z-index: 11;
+                  "
+                >
+                  <p class="product-woman-str text-center">Woman </p>
+                  <p class="product-jacket-str text-center">protected jacket</p>
+                  <button class="explore-button text-center">EXPLORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0">
+            <div class="product-item">
+              <div class="pi-img-wrapper" style="position: relative">
+                <div
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(36 47 58 / 49%);
+                    z-index: 10;
+                    display: block;
+                  "
+                >
+                </div>
+                <img
+                  src="./assets/pages/img/home/woman1.png"
+                  class="img-responsive"
+                  style="position: relative"
+                />
+                <div
+                  style="
+                    display: block;
+                    color: white;
+                    align-items: center;
+                    padding-top: 50%;
+                    background: transparent;
+                    z-index: 11;
+                  "
+                >
+                  <p class="product-woman-str text-center">Woman </p>
+                  <p class="product-jacket-str text-center">protected jacket</p>
+                  <button class="explore-button text-center">EXPLORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0">
+            <div class="product-item">
+              <div class="pi-img-wrapper" style="position: relative">
+                <div
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(36 47 58 / 49%);
+                    z-index: 10;
+                    display: block;
+                  "
+                >
+                </div>
+                <img
+                  src="./assets/pages/img/home/woman1.png"
+                  class="img-responsive"
+                  style="position: relative"
+                />
+                <div
+                  style="
+                    display: block;
+                    color: white;
+                    align-items: center;
+                    padding-top: 50%;
+                    background: transparent;
+                    z-index: 11;
+                  "
+                >
+                  <p class="product-woman-str text-center">Woman </p>
+                  <p class="product-jacket-str text-center">protected jacket</p>
+                  <button class="explore-button text-center">EXPLORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="new-arrival">
+            <h2
+              class="text-center"
+              style="
+                color: #565656;
+                font-family: Avenir;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 80.5px; /* 365.909% */
+                letter-spacing: 0.2px;
+                text-transform: uppercase;
+              "
+              >New Arrivals</h2
+            >
+            <center>
+              <div class="product-desc text-center"
+                >Lorem ipsum dolor sit amet consectetur. Quis tempor odio
+                gravida consectetur duis pulvinar fringilla pellentesque.
+                Gravida nunc at tellus ridiculus sed pellentesque ultricies.
+              </div>
+            </center>
+            <div class="grid-container">
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                  <p class="best-circle">BEST SELLER</p>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                  <p class="new-circle text-center">
+                    <span class="text-center" style="width: 100%; color: white"
+                      >NEW</span
+                    >
+                  </p>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/new.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="new-arrival">
+            <h2
+              class="text-center"
+              style="
+                color: #565656;
+                font-family: Avenir;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 80.5px; /* 365.909% */
+                letter-spacing: 0.2px;
+                text-transform: uppercase;
+              "
+              >Best Seller</h2
+            >
+            <center>
+              <div class="product-desc text-center"
+                >Lorem ipsum dolor sit amet consectetur. Quis tempor odio
+                gravida consectetur duis pulvinar fringilla pellentesque.
+                Gravida nunc at tellus ridiculus sed pellentesque ultricies.
+              </div>
+            </center>
+            <div class="grid-container-best">
+              <div class="product-item" style="width: fit-content">
+                <div class="pi-img-wrapper">
+                  <img
+                    src="assets/pages/img/home/woman3.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item" style="width: fit-content">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/woman3.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item" style="width: fit-content">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/woman3.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+              <div class="product-item" style="width: fit-content">
+                <div class="pi-img-wrapper" style="background-color: #eceef0">
+                  <img
+                    src="assets/pages/img/home/woman3.png"
+                    class="img-responsive"
+                    alt="PROTECTED JACKET"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 2%;
+                  "
+                >
+                  <div class="new-arrival-name">PROTECTED JACKET</div>
+                  <img
+                    src="./assets/pages/img/home/Bag.svg"
+                    style="margin-top: 5%; width: 10px; height: 10px"
+                  />
+                </div>
+                <div class="new-arrival-price-container"
+                  >$429 USD <span class="prev-price">$640 USD</span></div
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pre-footer" style="background-color: #1a1a1a">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 margin-bottom-40">
+            <ul
+              class="list-unstyled"
+              style="
+                color: #bdbdbd;
+                font-family: Avenir;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+              "
+            >
+              <li>SHOP</li>
+              <li>Outdoor Gear</li>
+              <li>Tactical Accessories</li>
+              <li>Apparel</li>
+              <li>Jewelry</li>
+              <li>Protective Gear</li>
+              <li>Knives</li>
+              <li>Airsoft and Airguns</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 footer-service margin-bottom-40">
+            <ul
+              class="list-unstyled"
+              style="
+                color: #bdbdbd;
+                font-family: Avenir;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+              "
+            >
+              <li>SERVICES</li>
+              <li>Privacy policy</li>
+              <li>Terms of service</li>
+              <li>Returns and exchange policy</li>
+              <li>Shipping policy</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="pre-footer-subscribe-box pull-right">
+              <div class="email-input text-left">
+                <h5
+                  class="margin-bottom-0"
+                  style="
+                    color: #9a9783;
+                    font-family: Avenir;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                  "
+                  >Subscribe to newslatter</h5
+                >
+                <div>
+                  <div action="#" style="margin-top: 8px">
+                    <div class="input-group" style="padding: 0">
+                      <input
+                        type="text"
+                        placeholder="Your Email"
+                        class="form-control"
+                        style="background: transparent"
+                      />
+                      <span class="input-group-btn">
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                          style="
+                            background-color: #121212;
+                            color: #d7d7d7;
+                            border-left: 1px solid grey;
+                          "
+                          >Subscribe</button
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="display: flex; align-items: center; margin-top: 18px"
+                >
+                  <img
+                    style="
+                      width: 24px;
+                      height: 24px;
+                      flex-shrink: 0;
+                      margin-right: 1rem;
+                    "
+                    src="./assets/icons/facebook-icon.svg"
+                  />
+                  <img
+                    style="
+                      width: 24px;
+                      height: 24px;
+                      flex-shrink: 0;
+                      margin-right: 3rem;
+                    "
+                    src="./assets/icons/icon.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img
+              src="./assets/pages/img/home/logo-text.png"
+              style="width: 194px; height: 76px; margin: 20px 15% 20% 15%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"> © 2023 RavenX. All rights reserved. </div>
+
+    <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
+    <script
+      src="assets/plugins/jquery-migrate.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="assets/plugins/bootstrap/js/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- 
+    <script
+      src="assets/corporate/scripts/back-to-top.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"
+      type="text/javascript"
+    ></script> -->
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+    <!-- <script
+      src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"
+      type="text/javascript"
+    ></script> -->
+    <!-- pop up -->
+    <!-- <script
+      src="assets/plugins/owl.carousel/owl.carousel.min.js"
+      type="text/javascript"
+    > -->
+    <!-- </script>slider for products -->
+    <!-- <script
+      src="assets/plugins/zoom/jquery.zoom.min.js"
+      type="text/javascript"
+    ></script> -->
+    <!-- product zoom -->
+    <!-- <script
+      src="assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js"
+      type="text/javascript"
+    ></script> -->
+
+    <script
+      src="assets/corporate/scripts/layout.js"
+      type="text/javascript"
+    ></script>
+    <!-- <script
+      src="assets/pages/scripts/bs-carousel.js"
+      type="text/javascript"
+    ></script> -->
+
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        Layout.init();
+        Layout.initOWL();
+        Layout.initImageZoom();
+        Layout.initTouchspin();
+        Layout.initTwitter();
+      });
+
+      var flag = true;
+      function handelClick() {
+        var closeIcon = document.getElementById("close-icon");
+        var toggleIcon = document.getElementById("toggle-icon");
+        if (flag) {
+          toggleIcon.style.display = "none";
+          closeIcon.style.display = "inline";
+          flag = false;
+        } else {
+          toggleIcon.style.display = "inline";
+          closeIcon.style.display = "none";
+          flag = true;
+        }
+      }
+    </script>
+  </body>
+</html>
