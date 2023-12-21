@@ -53,6 +53,10 @@
   text-transform: none !important;
 }
 
+.product-menu-list-item:hover {
+  color: #353535;
+}
+
 #products-list {
   background-color: #f8f9fa;
   display: none;
