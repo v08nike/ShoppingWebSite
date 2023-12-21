@@ -5,6 +5,77 @@
   margin-right: -96px; */
 }
 
+.menu-container {
+  margin-right: 25px;
+}
+
+.product-menu-title {
+  color: #010310;
+  font-family: Avenir;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  letter-spacing: 2.28px;
+  text-transform: uppercase;
+}
+
+.product-menu-title-mobile {
+  margin-top: 30px;
+  margin-bottom: 19px;
+  color: #010310;
+  font-family: Avenir;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  letter-spacing: 2.28px;
+  text-transform: uppercase;
+}
+
+.product-menu-list {
+  margin-top: 14px;
+  margin-bottom: 30px;
+  color: #010310;
+  font-family: Avenir;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  word-wrap: no;
+}
+
+.product-menu-list-item {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  white-space: nowrap;
+  text-transform: none !important;
+}
+
+#products-list {
+  background-color: #f8f9fa;
+  display: none;
+  height: fit-content;
+  width: 100%;
+  position: absolute;
+  top: 132px;
+  left: 0;
+}
+
+#products-list-mobile {
+  background-color: #f8f9fa;
+  display: none;
+  height: fit-content;
+  width: 100%;
+  position: absolute;
+  top: 129px;
+  left: 0;
+  z-index: 1000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .pi-img-wrapper {
   cursor: pointer;
 }
@@ -310,7 +381,25 @@ a.mobile-menulist:focus {
   .mobile-header {
     display: block;
   }
+
+  /* #products-list {
+    display: none;
+  }
+
+  #products-list-mobile {
+    display: block;
+  } */
 }
+
+/* @media only screen and (min-width: 1024px) {
+  #products-list {
+    display: block;
+  }
+
+  #products-list-mobile {
+    display: none;
+  }
+} */
 
 @media only screen and (max-width: 992px) {
   #product {
