@@ -5,6 +5,7 @@
   margin-right: -96px; */
 }
 
+
 .menu-container {
   margin-right: 25px;
 }
@@ -54,16 +55,17 @@
 }
 
 .product-menu-list-item:hover {
-  color: #e90e0e;
+  color: rgb(85, 85, 85);
 }
+
 
 #products-list {
   background-color: #f8f9fa;
   display: none;
   height: fit-content;
   width: 100%;
-  position: absolute;
-  top: 132px;
+  position: fixed;
+  top: 120px;
   left: 0;
 }
 

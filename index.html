@@ -42,7 +42,7 @@
       style="background-color: #1a1a1a; box-shadow: none; position: relative"
       data-toggle="dropdown"
     >
-      <div class="nav-topbar">
+      <div class="nav-topbar" style="padding-bottom: 0">
         <div class="col-md-5 additional-shop-info">
           <div style="align-items: center; display: flex">
             <a href="#">
@@ -87,7 +87,7 @@
               margin-top: 30px;
             "
           >
-            <li onclick="handleProduct()">
+            <li id="product-hover" style="padding-bottom: 24px">
               <a
                 class="menulist text-nowrap"
                 data-toggle="dropdown"
@@ -97,6 +97,184 @@
                 PRODUCTS
                 <i class="fa fa-angle-down" style="color: #f8f9fa"></i>
               </a>
+              <div id="products-list">
+                <!-- <div
+                  class="text-right"
+                  style="padding-top: 20px; padding-right: 100px"
+                >
+                  <i
+                    class="fa fa-close"
+                    style="color: #080709; font-size: 24px; cursor: pointer"
+                    onclick="handleProduct()"
+                  ></i>
+                </div> -->
+                <div style="padding-left: 85px; margin-top: 39px">
+                  <div class="row" style="justify-content: space-between">
+                    <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
+                      <div class="product-menu-title text-nowrap"
+                        >OUTDOOR GEAR</div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Flags</li>
+                        <li class="product-menu-list-item">Blankets (Wool)</li>
+                        <li class="product-menu-list-item">Flashlights</li>
+                        <li class="product-menu-list-item">Grappling Hooks</li>
+                        <li class="product-menu-list-item">Helmets</li>
+                        <li class="product-menu-list-item"
+                          >Hydration Bladders</li
+                        >
+                        <li class="product-menu-list-item">Pouches</li>
+                        <li class="product-menu-list-item">Bags and Cases</li>
+                        <li class="product-menu-list-item">Balaclavas</li>
+                        <li class="product-menu-list-item">Bandanas</li>
+                        <li class="product-menu-list-item">Belts</li>
+                        <li class="product-menu-list-item"
+                          >Caps / Berets / Hats</li
+                        >
+                        <li class="product-menu-list-item">Gloves</li>
+                        <li class="product-menu-list-item">Scarves</li>
+                        <li class="product-menu-list-item">Sunglasses</li>
+                        <li class="product-menu-list-item">Vests</li>
+                        <li class="product-menu-list-item">Shoes</li>
+                      </ul>
+                      <div class="product-menu-title">AIRSOFT AND</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item text-nowrap"
+                          >Airsoft Guns</li
+                        >
+                        <li class="product-menu-list-item">Airguns</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
+                      <div class="product-menu-title text-nowrap"
+                        >Tactical Accessories</div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Handcuffs</li>
+                        <li class="product-menu-list-item"
+                          >Handcuff/Key Accessories</li
+                        >
+                        <li class="product-menu-list-item">Holsters</li>
+                        <li class="product-menu-list-item">Plastic Buckles</li>
+                        <li class="product-menu-list-item">Sling</li>
+                      </ul>
+                      <div class="product-menu-title">Apparel</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">T-Shirts</li>
+                        <li class="product-menu-list-item">Pants</li>
+                      </ul>
+                      <div class="product-menu-title">Jewelry</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Bracelets</li>
+                        <li class="product-menu-list-item">Pendants</li>
+                      </ul>
+                      <div class="product-menu-title">Knives</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Folding Knives</li>
+                        <li class="product-menu-list-item">Fixed Knives</li>
+                        <li class="product-menu-list-item">Folding Knives</li>
+                        <li class="product-menu-list-item">Fixed Knives</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
+                      <div class="product-menu-title">Knives</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Folding Knives</li>
+                        <li class="product-menu-list-item">Fixed Knives</li>
+                      </ul>
+                      <div class="product-menu-title text-nowrap"
+                        >Airsoft and Airguns</div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Airsoft Guns</li>
+                        <li class="product-menu-list-item">Airguns</li>
+                      </ul>
+                      <div class="product-menu-title">Protective Gear</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Masks</li>
+                      </ul>
+                      <div class="product-menu-title text-nowrap"
+                        >Tactical Accessories </div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Handcuffs</li>
+                        <li class="product-menu-list-item"
+                          >Handcuff/Key Accessories</li
+                        >
+                        <li class="product-menu-list-item">Holsters</li>
+                        <li class="product-menu-list-item">Plastic Buckles</li>
+                        <li class="product-menu-list-item">Sling</li>
+                      </ul>
+                      <div class="product-menu-title">AIRSOFT AND AIRGUNS</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Airsoft Guns</li>
+                        <li class="product-menu-list-item">Airguns</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
+                      <div class="product-menu-title">Knives</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Folding Knives</li>
+                        <li class="product-menu-list-item">Fixed Knives</li>
+                      </ul>
+                      <div class="product-menu-title text-nowrap"
+                        >Airsoft and Airguns</div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Airsoft Guns</li>
+                        <li class="product-menu-list-item">Airguns</li>
+                      </ul>
+                      <div class="product-menu-title text-nowrap"
+                        >Tactical Accessories </div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Handcuffs</li>
+                        <li class="product-menu-list-item"
+                          >Handcuff/Key Accessories</li
+                        >
+                        <li class="product-menu-list-item">Holsters</li>
+                        <li class="product-menu-list-item">Plastic Buckles</li>
+                        <li class="product-menu-list-item">Sling</li>
+                      </ul>
+                      <div class="product-menu-title text-nowrap"
+                        >Airsoft and Airguns</div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Airsoft Guns</li>
+                        <li class="product-menu-list-item">Airguns</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
+                      <div class="product-menu-title">Knives</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Folding Knives</li>
+                        <li class="product-menu-list-item">Fixed Knives</li>
+                      </ul>
+                      <div class="product-menu-title text-nowrap"
+                        >Airsoft and Airguns</div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Airsoft Guns</li>
+                        <li class="product-menu-list-item">Airguns</li>
+                      </ul>
+                      <div class="product-menu-title text-nowrap"
+                        >Airsoft and Airguns</div
+                      >
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Airsoft Guns</li>
+                        <li class="product-menu-list-item">Airguns</li>
+                      </ul>
+                      <div class="product-menu-title">Knives</div>
+                      <ul class="list-unstyled product-menu-list">
+                        <li class="product-menu-list-item">Folding Knives</li>
+                        <li class="product-menu-list-item">Fixed Knives</li>
+                        <li class="product-menu-list-item">Folding Knives</li>
+                        <li class="product-menu-list-item">Fixed Knives</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li><a class="menulist" href="#">Brands</a></li>
             <li><a class="menulist text-nowrap" href="#">About Us</a></li>
@@ -185,167 +363,6 @@
               <a href="#">
                 <img src="./assets/icons/Bag.svg" />
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="products-list">
-        <div class="text-right" style="padding-top: 20px; padding-right: 100px">
-          <i
-            class="fa fa-close"
-            style="color: #080709; font-size: 24px; cursor: pointer"
-            onclick="handleProduct()"
-          ></i>
-        </div>
-        <div style="padding-left: 85px">
-          <div class="row" style="justify-content: space-between">
-            <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
-              <div class="product-menu-title text-nowrap">OUTDOOR GEAR</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Flags</li>
-                <li class="product-menu-list-item">Blankets (Wool)</li>
-                <li class="product-menu-list-item">Flashlights</li>
-                <li class="product-menu-list-item">Grappling Hooks</li>
-                <li class="product-menu-list-item">Helmets</li>
-                <li class="product-menu-list-item">Hydration Bladders</li>
-                <li class="product-menu-list-item">Pouches</li>
-                <li class="product-menu-list-item">Bags and Cases</li>
-                <li class="product-menu-list-item">Balaclavas</li>
-                <li class="product-menu-list-item">Bandanas</li>
-                <li class="product-menu-list-item">Belts</li>
-                <li class="product-menu-list-item">Caps / Berets / Hats</li>
-                <li class="product-menu-list-item">Gloves</li>
-                <li class="product-menu-list-item">Scarves</li>
-                <li class="product-menu-list-item">Sunglasses</li>
-                <li class="product-menu-list-item">Vests</li>
-                <li class="product-menu-list-item">Shoes</li>
-              </ul>
-              <div class="product-menu-title">AIRSOFT AND</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item text-nowrap">Airsoft Guns</li>
-                <li class="product-menu-list-item">Airguns</li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
-              <div class="product-menu-title text-nowrap"
-                >Tactical Accessories</div
-              >
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Handcuffs</li>
-                <li class="product-menu-list-item">Handcuff/Key Accessories</li>
-                <li class="product-menu-list-item">Holsters</li>
-                <li class="product-menu-list-item">Plastic Buckles</li>
-                <li class="product-menu-list-item">Sling</li>
-              </ul>
-              <div class="product-menu-title">Apparel</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">T-Shirts</li>
-                <li class="product-menu-list-item">Pants</li>
-              </ul>
-              <div class="product-menu-title">Jewelry</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Bracelets</li>
-                <li class="product-menu-list-item">Pendants</li>
-              </ul>
-              <div class="product-menu-title">Knives</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Folding Knives</li>
-                <li class="product-menu-list-item">Fixed Knives</li>
-                <li class="product-menu-list-item">Folding Knives</li>
-                <li class="product-menu-list-item">Fixed Knives</li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
-              <div class="product-menu-title">Knives</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Folding Knives</li>
-                <li class="product-menu-list-item">Fixed Knives</li>
-              </ul>
-              <div class="product-menu-title text-nowrap"
-                >Airsoft and Airguns</div
-              >
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Airsoft Guns</li>
-                <li class="product-menu-list-item">Airguns</li>
-              </ul>
-              <div class="product-menu-title">Protective Gear</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Masks</li>
-              </ul>
-              <div class="product-menu-title text-nowrap"
-                >Tactical Accessories </div
-              >
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Handcuffs</li>
-                <li class="product-menu-list-item">Handcuff/Key Accessories</li>
-                <li class="product-menu-list-item">Holsters</li>
-                <li class="product-menu-list-item">Plastic Buckles</li>
-                <li class="product-menu-list-item">Sling</li>
-              </ul>
-              <div class="product-menu-title">AIRSOFT AND AIRGUNS</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Airsoft Guns</li>
-                <li class="product-menu-list-item">Airguns</li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
-              <div class="product-menu-title">Knives</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Folding Knives</li>
-                <li class="product-menu-list-item">Fixed Knives</li>
-              </ul>
-              <div class="product-menu-title text-nowrap"
-                >Airsoft and Airguns</div
-              >
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Airsoft Guns</li>
-                <li class="product-menu-list-item">Airguns</li>
-              </ul>
-              <div class="product-menu-title text-nowrap"
-                >Tactical Accessories </div
-              >
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Handcuffs</li>
-                <li class="product-menu-list-item">Handcuff/Key Accessories</li>
-                <li class="product-menu-list-item">Holsters</li>
-                <li class="product-menu-list-item">Plastic Buckles</li>
-                <li class="product-menu-list-item">Sling</li>
-              </ul>
-              <div class="product-menu-title text-nowrap"
-                >Airsoft and Airguns</div
-              >
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Airsoft Guns</li>
-                <li class="product-menu-list-item">Airguns</li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-4 col-lg-2 menu-container">
-              <div class="product-menu-title">Knives</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Folding Knives</li>
-                <li class="product-menu-list-item">Fixed Knives</li>
-              </ul>
-              <div class="product-menu-title text-nowrap"
-                >Airsoft and Airguns</div
-              >
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Airsoft Guns</li>
-                <li class="product-menu-list-item">Airguns</li>
-              </ul>
-              <div class="product-menu-title text-nowrap"
-                >Airsoft and Airguns</div
-              >
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Airsoft Guns</li>
-                <li class="product-menu-list-item">Airguns</li>
-              </ul>
-              <div class="product-menu-title">Knives</div>
-              <ul class="list-unstyled product-menu-list">
-                <li class="product-menu-list-item">Folding Knives</li>
-                <li class="product-menu-list-item">Fixed Knives</li>
-                <li class="product-menu-list-item">Folding Knives</li>
-                <li class="product-menu-list-item">Fixed Knives</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -1583,6 +1600,18 @@
         }
       }
       var productList = document.getElementById("products-list");
+      var productHoverMenu = document.getElementById("product-hover");
+
+      productHoverMenu.addEventListener("mouseover", function () {
+        productList.style.display = "block";
+      });
+      productHoverMenu.addEventListener("mouseout", function () {
+        productList.style.display = "none";
+      });
+      productList.addEventListener("mouseout", function () {
+        productList.style.display = "none";
+      });
+
       function handleProduct(str) {
         // handelClick();
         console.log(str, "******");
