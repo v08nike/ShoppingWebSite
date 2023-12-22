@@ -1594,7 +1594,6 @@
           toggleIcon.style.display = "inline";
           closeIcon.style.display = "none";
           flag = true;
-          productList.style.display = "none";
           productListMobile.style.display = "none";
           productMobileFlag = true;
         }
@@ -1632,11 +1631,9 @@
         console.log("AAAA", productMobileFlag);
         if (productMobileFlag) {
           productListMobile.style.display = "block";
-          productList.style.display = "block";
           productMobileFlag = false;
         } else {
           productListMobile.style.display = "none";
-          productList.style.display = "none";
           productMobileFlag = true;
         }
       }
